@@ -1,0 +1,103 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.towers{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+
+.tower{
+  cursor: pointer;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  width:80px;
+ 
+  
+}
+.line{
+  border: 2px solid rgba(0, 0, 0, 0.712);
+  border-radius: 10px;
+}
+
+
+.tower:hover .line{
+  background: red;
+}
+
+.tower .line{
+  position:absolute ;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 5px;
+  height: 150px;
+  width: 9px;
+  background: rgb(223, 222, 222);
+
+}
+
+.discs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+}
+
+.disc{
+  border: 2px solid white;
+  border-radius: 15px;
+  text-align: center;
+  height: 20px;
+  background: rgb(38, 38, 180);
+  width: 10px;
+  
+}
+
+.disc:hover{
+  background: rgb(21, 21, 126);
+}
